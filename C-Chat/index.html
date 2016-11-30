@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Messenger</title>
+    <style>
+        label { display: inline-block; width: 5em; }
+        #author, #content { width: 30em; }
+    </style>
+    <link rel="stylesheet" type="text/css" href="messenger-styles.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="messenger.js"></script>
+
+</head>
+<body background="img/background.png">
+<div id="container">
+    <div id="messenger">
+        <div id="main">
+            <div id="chat-room-name">Chat Room</div>
+            <div id="messages"></div>
+            <div id="controls">
+                <label for="author">Name: </label>
+                <input id="author" type="text">
+                <br>
+                <label for="content" id="message-label">Message: </label>
+                <textarea id="content"></textarea>
+                <input id="submit" type="button" value="Send">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
