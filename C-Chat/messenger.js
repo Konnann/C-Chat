@@ -1,7 +1,6 @@
 $(function attachevents() {
     $('#refresh').click(refreshChat);
     $('#submit').click(sendMessage);
-    $('#messages').scroll(userScroll);
     $('#messages').scrollTop($('#messages')[0].scrollHeight); //scroll to bottom of chat at the start
 
     //send message when enter is pressed
@@ -12,9 +11,9 @@ $(function attachevents() {
         }
     });
 
-    setInterval(refreshChat, 500);
     let userScrolling = false; //auto-scrolling to bottom of chat depends on this variable
     let url = 'https://messenger-a7c78.firebaseio.com/Messenger.json'; //database link
+    setInterval(refreshChat, 500);
 
     function refreshChat(){
 
